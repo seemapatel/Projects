@@ -1,0 +1,98 @@
+/**
+Plugin Name: TW Recent Posts Widget
+Plugin URI: http://vuckovic.biz/wordpress-plugins/tw-recent-posts-widget
+Description: A simple and flexible widget for WordPress which will show recent posts from selected category.
+Author: Igor Vučković
+Author URI: http://vuckovic.biz
+Version: 1.3
+*/
+
+/* R E C E N T   P O S T S
+----------------------------------------*/
+.tw-recent-posts {
+	float: left;
+        margin: 0 115px 0 40px;
+        width: 445px;
+}
+.tw-recent-posts ul {
+    display: inline-block;
+    margin: 25px 0 0;
+    width: 100%;
+    list-style: outside none none;
+  
+}
+.tw-recent-posts ul li {
+    border-bottom: 1px solid #666161;
+    display: inline-block;
+    margin: 0 0 30px;
+    padding: 0 0 15px;
+    width: 100%;
+}
+.tw-recent-posts ul li img {
+    float: left;
+    height: 80px;
+    margin: 0 0 20px;
+    width: 80px;
+     border: medium none;
+}
+.tw-recent-posts title {
+    color: #8b8786;
+    font-size: 18px;
+    line-height: 18px;
+}
+tw-recent-posts a {
+    color: #000000;
+    outline: medium none;
+    text-decoration: none;
+}
+.tw-recent-posts .featured-post {
+	margin: 15px 0;
+	line-height: 1.1em;
+}
+
+.tw-recent-posts .featured-post h4 {
+	clear: none;
+	font-size: 1.3em;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+.tw-recent-posts .featured-post h4 a {
+	font-size: 100%
+}
+
+.tw-recent-posts .post-time {
+	font-size: 0.8em;
+	font-style: italic;
+	text-align: right;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+
+.tw-recent-posts .featured-post img {
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.tw-recent-posts .featured-post .excerpt {
+	clear: none;
+}
+
+.tw-recent-posts a.readmore {
+    color: #205dab;
+    outline: medium none;
+    text-decoration: none;
+}
+.tw-recent-posts a:hover{text-decoration:underline;}
+
+
+.tw-recent-posts .clear {
+	clear: both;
+}
+
+.news-text span {
+    color: #666161;
+    float: none;
+    font-size: 12px;
+    line-height: 20px;
+}
