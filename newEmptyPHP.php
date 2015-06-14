@@ -1,5 +1,5 @@
 <?php
-echo "hello";
+echo "hello- world";
 
 /*
  * To change this template, choose Tools | Templates
