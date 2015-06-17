@@ -35,7 +35,7 @@ get_header(); ?>
     <li>  <?php the_post_thumbnail() ?>
         <div class="news-text">
             <a class ="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            <p><?php the_content(); ?> <a href="<?php the_permalink(); ?>">read more</a></p>
+            <p><?php the_content(); ?></p>
             <span><?php the_time(get_option('date_format')); ?></span>
         </div>
     </li>
