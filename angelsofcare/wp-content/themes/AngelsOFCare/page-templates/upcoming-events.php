@@ -36,13 +36,11 @@ get_header(); ?>
          <?php  $format_in = 'Ymd'; // the format your value is saved in (set in the field options)
                 $format_out = 'M-d-Y'; // the format you want to end up with
                 $date = DateTime::createFromFormat($format_in, get_field('date_picker',$post->ID));
-                    
                 $format_date=explode('-',$date->format( $format_out )); ?>
-
                 <div class="date-part"> <span class="month"><?php echo $format_date[0]; ?></span> <span class="date"><?php echo $format_date[1];?></span> </div>
                 <div class="news-text"> 
                     <a class ="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    <p><?php the_content(); ?> <a href="<?php the_permalink(); ?>">read more</a></p>
+                    <p><?php the_content(); ?></p>
                 </div>
             </li>
                 <?php  endwhile;?></ul>
