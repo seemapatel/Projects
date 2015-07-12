@@ -24,10 +24,13 @@ get_header(); ?>
           <h2>Latest News</h2>
           <ul>
  <?php
-     // get latest news and upcoming events on home page     
-    $query = null;
+     // get latest news and upcoming events on home page
+ 
+ $paged = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;   $query = null;
     $query = new WP_Query(array(
-                'post_type' => 'latest_news'
+                'post_type' => 'latest_news',
+                'posts_per_page'=>2,
+                'paged'=>$paged 
             ));
  //$post_type=get_post_type(101);
    // echo $post_type;
@@ -40,9 +43,30 @@ get_header(); ?>
         </div>
     </li>
      <?php endwhile;?></ul>
-     </div>
-    
+ <?php
+$page = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$temp = $wp_query;
+$wp_query = null;
+$wp_query = new WP_Query();
+$wp_query -> query('post_type=latest_news&showposts=2'.'&paged='.$paged);
+	while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+	<div class="post">
+        ....Do loop stuff
+        </div>
+<?php endwhile; // end of the loop. ?>
+
+<div class="pagenav">
+<div class="alignleft"><?php previous_posts_link('Previous') ?></div>
+<div class="alignright"><?php next_posts_link('Next') ?></div>
+</div>
+
+<?php $wp_query = null; $wp_query = $temp; ?>
+     </div> <!-- latest-news -->
   
-    </div> <!--temrarory middle section -->
+    </div> <!--news-section -->
+   
+    </div><!--temparory middle section -->
+    
+    
 
 <?php  get_footer(); ?>
