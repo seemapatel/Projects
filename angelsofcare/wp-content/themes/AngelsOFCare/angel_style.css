@@ -141,7 +141,7 @@ h4{    color: #333333;    font-family: "Montserrat";    font-size: 24px;    font
 .partners-part{width:1200px;padding:45px 0px 73px 0px;background-color:#1c1919;}
 h3{font-size:36px;line-height:48px;color:#8b8786;text-align:center;}
 .partner-logo{width:1100px;margin:40px auto 0px auto;display:table;}
-.healthcare{float:left;margin:20px 45px 0px 0px;float:left;}
+.healthcare{float:left;margin:20px 36px 0px 0px;float:left;}
 .care{float:left;margin:10px 40px 0px 0px;}
 .vgm{float:left;margin:5px 45px 0px 0px;}
 .heros{float:left;margin:20px 45px 0px 0px;}
@@ -357,3 +357,23 @@ h6{font-size:18px;line-height:30px;color:#666161;font-family:'Montserrat';font-w
 .connect {  font-size: 18px;  line-height: 30px;  color: #fff;  font-family: 'Montserrat';  font-weight: 700;  float: left;  width: 100%;}
 .copyright{font-size:14px;line-height:20px;color:#666161;width:100%;margin:40px 0px 0px 0px;float:left;}
 /**footer section css end here**/
+
+
+/* Pagination */
+
+.alignleft {
+	float: left;
+}
+
+.alignleft a{
+    color:#8b8786;
+}
+
+.alignright {
+    float: right;
+}
+
+
+.alignright a {
+        color:#8b8786;
+}
